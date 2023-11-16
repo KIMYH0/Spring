@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script
+   src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <style>
+   body{
+   height:100vh;
+   background-color:white;
+   display:flex;
+   justify-content:center; /* 축 수평방향 정렬 */
+   align-items:center; /* 축 수직방향 정렬 */
+   }
+   .prof{
+   width:300px;
+   text-align:center;
+   border-radius:10px;
+   padding:25px;
+   }
+   .prof h3{
+   text-transform:capitalize;
+   }
+   .prof-photo img{
+   border-radius:50%;
+   width:200px;
+   }
+   .photo-upload{
+   margin-top:20px;
+   }
+   .photo-upload label{
+   background-color:yellow;
+   color:blue;
+   display:block;
+   padding:10px;
+   	}
+   .photo-upload input[type=file]{
+   display:none;
+   }
+   </style>
+<script>
+</script>
+</head>
+<body>
+<div class="prof">
+    <h3>upload</h3>
+    <div class="prof-photo">
+       <img src="images/한예슬.jfif">
+    </div>
+    <div class="photo-upload">
+      <label for="upload">Upload</label>
+      <input type="file" id="up">
+    </div>
+  </div>
+  <script>
+  $('#up').change(function(e){ //enter이벤트 처리 / 값 변경 확인하는 메서드
+	  var p=URL.createObjectURL(e.target.files[0]);
+  		$('.prof-photo img').attr('src',p);
+  })
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script 
+   src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+	function on(){
+		$("#bb").remove();  //선택요소를 포함, 하위요소들 재거(선택한 노드까지 삭제)
+	}
+	function on1(){
+		$("#aa").empty();  //선택된 요소의 하위요소들만 제거(선택한 노드의 자식만 삭제)
+	}
+</script>
+
+</head>
+
+<body>	
+      <div id="aa">
+      <p>태그</p>
+        <p id="bb">id가 bb</p>
+        <p>태그 p</p>
+    </div>
+      <button onclick="on()">제거</button>
+      <button onclick="on1()">제거1</button>
+</body>
+</html>

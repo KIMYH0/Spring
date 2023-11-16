@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script 
+   src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script>
+   $(function(){
+	 $("p:eq(2)").css('background-color','yellow');  
+	 $('p:nth-child(1)').css('color', 'blue');
+   })
+   
+   </script>
+</head>
+<body>
+<div>
+
+        <p>div 안 p태그</p>
+        <p>div 안 p태그</p>
+        <p>div 안 p태그</p>
+    </div>
+​
+    <div>
+        <p>div 안 p태그</p>
+        <p>div 안 p태그</p>
+        <p>div 안 p태그</p>
+    </div>
+
+​
+
+    <div>
+        <div>div 안 p태그</div>
+        <p>div 안 p태그</p>
+        <p>div 안 p태그</p>
+
+    </div>
+</body>
+</html>

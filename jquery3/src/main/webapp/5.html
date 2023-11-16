@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script 
+   src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+/* 	function on(){
+		var n=$("#a1").text(); // div가 감싸고 있는 텍스트 가져온다
+		alert(n);
+	} 
+ 	function on() {ㄴ
+	    var n = document.getElementById("a1").innerHTML; 
+	    alert(n);
+	} 
+	function on2(){
+	$('#a2').text("ㅡㅡ"); //새 텍스트 생성
+	} */
+	function on(){
+		var n=$("#a1").html();
+		alert(n);
+	}
+</script>
+</head>
+
+<body>	
+	<div id="a1">문자열</div>
+	<button onclick="on()">문자열 갖고오기</button>
+	
+	<div id="a2">문자열2</div>
+	<button onclick="on2()">문자열 갖고오기</button>
+</body>
+</html>
